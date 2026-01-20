@@ -12,14 +12,14 @@
             --bg-primary: #0a0a0f;
             --bg-secondary: #12121a;
             --bg-card: #1a1a25;
-            --accent: #6366f1;
-            --accent-glow: rgba(99, 102, 241, 0.15);
+            --accent: #ec4899;
+            --accent-glow: rgba(236, 72, 153, 0.15);
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
             --text-muted: #64748b;
             --border: rgba(148, 163, 184, 0.1);
-            --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-            --gradient-2: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            --gradient-1: linear-gradient(135deg, #ec4899 0%, #db2777 50%, #be185d 100%);
+            --gradient-2: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
         }
 
         * {
@@ -67,7 +67,7 @@
         .orb-1 {
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, transparent 70%);
             top: -200px;
             right: -200px;
             animation: float 20s ease-in-out infinite;
@@ -76,7 +76,7 @@
         .orb-2 {
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(219, 39, 119, 0.25) 0%, transparent 70%);
             bottom: 20%;
             left: -150px;
             animation: float 25s ease-in-out infinite reverse;
@@ -248,7 +248,7 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 10px 40px rgba(236, 72, 153, 0.3);
         }
 
         .btn-secondary {
@@ -300,17 +300,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 8rem;
-            color: var(--accent);
             overflow: hidden;
+        }
+
+        .profile-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .profile-inner::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, transparent 50%, rgba(99, 102, 241, 0.1) 100%);
+            background: linear-gradient(180deg, transparent 50%, rgba(236, 72, 153, 0.1) 100%);
         }
 
         /* Research Stats Section */
@@ -375,8 +378,8 @@
 
         .stat-card:hover {
             transform: translateY(-8px);
-            border-color: rgba(99, 102, 241, 0.3);
-            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.15);
+            border-color: rgba(236, 72, 153, 0.3);
+            box-shadow: 0 20px 60px rgba(236, 72, 153, 0.15);
         }
 
         .stat-card:hover::before {
@@ -446,8 +449,8 @@
 
         .course-card:hover {
             transform: translateY(-8px);
-            border-color: rgba(99, 102, 241, 0.4);
-            box-shadow: 0 30px 80px rgba(99, 102, 241, 0.2);
+            border-color: rgba(236, 72, 153, 0.4);
+            box-shadow: 0 30px 80px rgba(236, 72, 153, 0.2);
         }
 
         .course-image {
@@ -613,7 +616,7 @@
         }
 
         .award-card:hover {
-            border-color: rgba(99, 102, 241, 0.3);
+            border-color: rgba(236, 72, 153, 0.3);
             transform: translateY(-4px);
         }
 
@@ -769,10 +772,6 @@
                 width: 220px;
                 height: 220px;
             }
-
-            .profile-inner {
-                font-size: 5rem;
-            }
         }
     </style>
 </head>
@@ -814,7 +813,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Hi, I'm <span>Shreshth Tuli</span></h1>
-                <p class="hero-subtitle">AI Researcher & Research Engineer at Happening Technology</p>
+                <p class="hero-subtitle">Most people call me Shray. Director of AI, Model Orchestration at Lenovo Technologies</p>
                 <p class="hero-description">
                     PhD in AI and Optimization from Imperial College London. Building intelligent systems 
                     at the intersection of deep learning, edge computing, and robotics. Recognized in 
@@ -841,7 +840,9 @@
             </div>
             <div class="hero-image">
                 <div class="profile-frame">
-                    <div class="profile-inner">ST</div>
+                    <div class="profile-inner">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGuwAhtCzNJcg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697878098977?e=2147483647&v=beta&t=uO_TPpMwwOJkmSVCf5_yZbcKUCFFsdnqnZELoj_eo1c" alt="Shreshth Tuli" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -896,7 +897,7 @@
             </div>
             <div class="courses-grid">
                 <a href="https://shreshthtuli.github.io/llms-from-scratch/README.html" class="course-card" target="_blank">
-                    <div class="course-image" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
+                    <div class="course-image" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);">
                         <span class="course-icon">🧠</span>
                     </div>
                     <div class="course-content">
@@ -917,7 +918,7 @@
                     </div>
                 </a>
                 <a href="https://shreshthtuli.github.io/build-your-own-super-agents/README.html" class="course-card" target="_blank">
-                    <div class="course-image" style="background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);">
+                    <div class="course-image" style="background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);">
                         <span class="course-icon">🤖</span>
                     </div>
                     <div class="course-content">
@@ -951,9 +952,9 @@
                 <div class="about-text">
                     <h3>Researcher, Builder, Educator</h3>
                     <p>
-                        I'm a Research Engineer at Happening Technology with a PhD in AI and Optimization Theory 
-                        from Imperial College London, where I was a President's PhD Scholar. My undergraduate 
-                        was in Computer Science at IIT Delhi.
+                        I'm Director of AI, Model Orchestration at Lenovo Technologies with a PhD in AI and Optimization Theory
+                        from Imperial College London, where I was a President's PhD Scholar, and an Executive MBA from
+                        the London School of Economics (LSE). My undergraduate was in Computer Science at IIT Delhi.
                     </p>
                     <p>
                         My research spans deep learning, edge computing, cloud systems, IoT, and robotics. 
@@ -961,35 +962,50 @@
                         and SIGMETRICS, with multiple Best Paper Awards.
                     </p>
                     <p>
-                        Beyond research, I'm passionate about education—creating comprehensive courses that 
+                        Beyond research, I'm passionate about education—creating comprehensive courses that
                         make advanced ML systems approachable for researchers, engineers, and curious builders alike.
+                    </p>
+                    <p>
+                        As a Director of AI at Lenovo, my focus is on solving one of the most critical challenges
+                        in AI today: creating intelligent systems that seamlessly orchestrate across the entire
+                        computing continuum – from on-device processing to edge computing to cloud infrastructure.
+                        This means designing hybrid AI architectures that leverage multiple models and agentic
+                        systems to deliver the right intelligence, at the right place, at the right time. Along
+                        the years, I've worked on building large-scale agentic and symbolic AI solutions for
+                        optimising performance and providing highest quality of service to users. I've also
+                        leveraged AI to optimise customer acquisition, engagement and retention.
                     </p>
                 </div>
                 <div class="experience-timeline">
                     <div class="timeline-item">
-                        <div class="timeline-date">2023 – Present</div>
+                        <div class="timeline-date">2025 – Present</div>
+                        <div class="timeline-title">Director of AI, Model Orchestration</div>
+                        <div class="timeline-org">Lenovo Technologies</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 – 2025</div>
+                        <div class="timeline-title">Executive MBA</div>
+                        <div class="timeline-org">London School of Economics (LSE)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 – 2025</div>
                         <div class="timeline-title">Senior Research Engineer</div>
-                        <div class="timeline-org">Happening Technology, London</div>
+                        <div class="timeline-org">Happening Technology</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-title">Postdoctoral Researcher</div>
+                        <div class="timeline-org">Imperial College London</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-title">Research Engineer</div>
+                        <div class="timeline-org">Meta</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2020 – 2023</div>
                         <div class="timeline-title">PhD in AI & Optimization</div>
                         <div class="timeline-org">Imperial College London</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2022</div>
-                        <div class="timeline-title">Software Engineering Intern</div>
-                        <div class="timeline-org">Meta</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2022</div>
-                        <div class="timeline-title">Alan Turing Research Intern</div>
-                        <div class="timeline-org">TRL Software</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2018 – 2020</div>
-                        <div class="timeline-title">Research Fellow</div>
-                        <div class="timeline-org">University of Melbourne</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2016 – 2020</div>
@@ -1010,6 +1026,16 @@
             </div>
             <div class="awards-grid">
                 <div class="award-card">
+                    <div class="award-icon">🧠</div>
+                    <div class="award-title">Mensa Member</div>
+                    <div class="award-org">Top 2% IQ Worldwide</div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">🌟</div>
+                    <div class="award-title">Stanford Top 2% Scientists</div>
+                    <div class="award-org">Worldwide Ranking</div>
+                </div>
+                <div class="award-card">
                     <div class="award-icon">🏆</div>
                     <div class="award-title">SPEC Kaivalya Dixit Distinguished Dissertation Award</div>
                     <div class="award-org">SPEC Research, 2023</div>
@@ -1028,11 +1054,6 @@
                     <div class="award-icon">🥇</div>
                     <div class="award-title">Gold Medal – ACM SIGMETRICS SRC</div>
                     <div class="award-org">Student Research Competition, 2021</div>
-                </div>
-                <div class="award-card">
-                    <div class="award-icon">🌟</div>
-                    <div class="award-title">Stanford Top 2% Scientists</div>
-                    <div class="award-org">Worldwide Ranking</div>
                 </div>
                 <div class="award-card">
                     <div class="award-icon">🎓</div>
